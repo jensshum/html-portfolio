@@ -58,11 +58,20 @@ body
   
   .title-container
   {
-    transition: color .4s;
   }
-  .title-container:hover
+  /* .title-container:hover
   {
     color: green;
+    animation: zoom-in-zoom-out .7s ease infinite;
+  } */
+  p:hover 
+  {
+    transition: color .4s;
+    color: green;
+    animation: zoom-in-zoom-out .7s ease infinite;
+  }
+  img:hover {
+    
     animation: zoom-in-zoom-out .7s ease infinite;
   }
   
@@ -111,34 +120,26 @@ body
   {
     display: none;
   }
-  .page
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+  
   html, body {
     padding: 0px;
     margin: 0px;
-    
-    
   }
-
-  img {
-    
-  }
-
-@media (min-width:992px) {
-    img {
-        max-width: 314px;
-        max-height: 314px;
-    }
+.banner 
+{
+  margin: 50px 0px 0px ;
+  background-color: white;
+  font-size: 5vh;
+  text-align: center;
+  color: black;
+  padding: 20px;
 }
 
-@media (min-width:1200px) {
-    img {
-        max-width: 380px;
-        max-height: 380px;
-    }
+@media (min-width: 1200px)
+{
+  p 
+  {
+    font-size: 60px;
+  }
+ 
 }

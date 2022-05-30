@@ -18,28 +18,34 @@
 
 <body>
     <div class="topnav">
-        <a class = "active" id="button" href="#home" onclick='return check()'>Home</a>
+        <a class="active" id="button" href="#home" onclick='return check()'>Home</a>
         <a id="button1" href="#news" onclick='return check1()'>News</a>
         <a id="button2" href="#contact" onclick='return check2()'>Contact</a>
         <a id="button3" href="#button" onclick='return check3()'>About</a>
     </div>
-    <div class="page">
+    <div class="title-section">
         <div class="title">
-            <div class = "title-container">
+            <div class="title-container">
                 <p>
-                Jens Shumway <br>
-                Front-end Developer
-            </p>
-            <img src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg " class = "responsive" style = "width: 25vw; min-width: 140px; padding: 0px">
+                    Jens Shumway <br>
+                    Front-end Developer
+                </p>
+                <img src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg "
+                    class="responsive" style="width: 25vw; min-width: 140px; padding: 0px">
             </div>
-            
+
         </div>
+
+    </div>
+    <div class="banner">
+        take a gander at some of my projects.
     </div>
     <script>
         $("document").ready(function () {
-                $(".title-container").hide().slideDown({duration:600, queue: false});
-                $(".title-container").hide().fadeIn({duration:700, queue:false});
+            $(".title-container").hide().fadeIn({ duration: 700 });
+            $(".banner").hide().fadeIn({duration: 1000})
         });
+
     </script>
 
 
