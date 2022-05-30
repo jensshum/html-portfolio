@@ -13,8 +13,8 @@ body
 .topnav {
     background-color: #333;
     overflow: hidden;
-    border-radius: 10px;
     font-family:fantasy  
+    
   }
   
   /* Style the links inside the navigation bar */
@@ -40,4 +40,82 @@ body
     background-color: #004354;
     color: white;
     border-radius: 10px;
+  }
+
+  .title 
+  {
+    width: 100%;
+    text-align: center;
+    font-family:fantasy;
+    font-size: 6.5vw;
+    padding: 100px;
+    color: white;
+    /* animation: fadeIn linear 1s; */
+    /* -webkit-transition: color 2s; */
+    animation: zoom-in-zoom-out 1s ;
+    
+  }
+  
+  .title-container
+  {
+    transition: color .4s;
+  }
+  .title-container:hover
+  {
+    color: green;
+    animation: zoom-in-zoom-out .7s ease infinite;
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    }
+  
+  
+  a {
+    font-size: 500%;
+    text-decoration: none;
+    background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+    transition: .4s background-size;
+  }
+  
+  a:hover {
+    background-size: 100% .1em;
+  }
+  
+  /* Variations */
+  a.left {
+    background-position: left bottom;
+  }
+  
+  a.right {
+    background-position: right bottom;
+  }
+  
+
+
+/* @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+} */
+
+  .hidden 
+  {
+    display: none;
+  }
+  .page
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  html, body {
+    padding: 0px;
+    margin: 0px;
+    
+    
   }

@@ -30,3 +30,4 @@ function check3()
     document.getElementById("button2").classList.remove("active")
     return document.getElementById("button3").classList.add("active");
 }
+
