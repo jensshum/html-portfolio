@@ -48,7 +48,7 @@ body
     text-align: center;
     font-family:fantasy;
     font-size: 6.5vw;
-    padding: 100px;
+    
     color: white;
     /* animation: fadeIn linear 1s; */
     /* -webkit-transition: color 2s; */
@@ -65,6 +65,7 @@ body
     color: green;
     animation: zoom-in-zoom-out .7s ease infinite;
   }
+  
   @keyframes zoom-in-zoom-out {
     0% {
       transform: scale(1, 1);
@@ -74,6 +75,10 @@ body
     }
     }
   
+  .responsive {
+    height: auto;
+    width: 100%;
+  }
   
   a {
     font-size: 500%;
@@ -119,3 +124,37 @@ body
     
     
   }
+
+  @media (max-width:767px){
+    img {
+      width: 200px; 
+      height: 200px; 
+    }
+   }
+   @media (max-width:767px) {
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    img {
+        max-width: 240px;
+        max-height: 240px;
+    }
+}
+
+@media (min-width:992px) {
+    img {
+        max-width: 314px;
+        max-height: 314px;
+    }
+}
+
+@media (min-width:1200px) {
+    img {
+        max-width: 380px;
+        max-height: 380px;
+    }
+}
