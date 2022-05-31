@@ -12,7 +12,7 @@ body
 
 .topnav {
     display: block;
-    background-color: #333;
+    background-color: none;
     overflow: hidden;
     font-family:fantasy;  
     display: flex;
@@ -38,7 +38,7 @@ body
     position: absolute;
     top: 0;
     right: 0;
-    
+
   }
   
   /* Add a color to the active/current link */
@@ -53,7 +53,7 @@ body
     width: 100%;
     text-align: center;
     font-family:fantasy;
-    font-size: 6.5vw;
+    font-size: 8vw;
     color: white;
     /* animation: fadeIn linear 1s; */
     /* -webkit-transition: color 2s; */
@@ -64,7 +64,9 @@ body
   .title-container
   {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px;
   }
   /* .title-container:hover
   {
@@ -99,7 +101,7 @@ body
   a {
     font-size: 500%;
     text-decoration: none;
-    background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+    background: linear-gradient(currentColor, currentColor) bottom / 0 .2em no-repeat;
     transition: .4s background-size;
   }
   
@@ -127,10 +129,9 @@ body
 .banner 
 {
   margin: 50px 0px 0px ;
-  background-color: white;
   font-size: 5vh;
   text-align: center;
-  color: black;
+  color: white;
   padding: 20px;
 }
 
@@ -138,7 +139,7 @@ body
 {
   p 
   {
-    font-size: 60px;
+    font-size: 80px;
   }
   .title-container
   {
@@ -162,5 +163,4 @@ body
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  
 }
