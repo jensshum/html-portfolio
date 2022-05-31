@@ -11,14 +11,13 @@ body
 }
 
 .topnav {
+    display: block;
     background-color: #333;
     overflow: hidden;
     font-family:fantasy;  
     display: flex;
+}
 
-    
-  }
-  
   /* Style the links inside the navigation bar */
   .topnav a {
     color: #f2f2f2;
@@ -26,7 +25,6 @@ body
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    
   }
   
   /* Change the color of links on hover */
@@ -34,6 +32,13 @@ body
     background-color: #ddd;
     color: black;
     border-radius: 10px;
+  }
+  .social-icons
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
   }
   
   /* Add a color to the active/current link */
@@ -49,7 +54,6 @@ body
     text-align: center;
     font-family:fantasy;
     font-size: 6.5vw;
-    
     color: white;
     /* animation: fadeIn linear 1s; */
     /* -webkit-transition: color 2s; */
@@ -59,6 +63,8 @@ body
   
   .title-container
   {
+    display: flex;
+    justify-content: center;
   }
   /* .title-container:hover
   {
@@ -109,19 +115,11 @@ body
   a.right {
     background-position: right bottom;
   }
-  
-
-
 /* @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 } */
 
-  .hidden 
-  {
-    display: none;
-  }
-  
   html, body {
     padding: 0px;
     margin: 0px;
@@ -142,5 +140,27 @@ body
   {
     font-size: 60px;
   }
+  .title-container
+  {
+    /* align-items: center; */
+  }
  
+}
+
+@media (max-width: 800px)
+{
+  .title-container 
+  {
+    display:block;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  
 }

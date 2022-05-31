@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,12 +23,18 @@
         <a id="button1" href="#news" onclick='return check1()'>News</a>
         <a id="button2" href="#contact" onclick='return check2()'>Contact</a>
         <a id="button3" href="#button" onclick='return check3()'>About</a>
+        <div class = "social-icons">
+            <a href="https://www.facebook.com/jens.shumway.92" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/jens-shumway-892998228/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/jensshum" class="fa fa-github"></a>
+        </div>
     </div>
     <div class="title-section">
         <div class="title">
             <div class="title-container">
                 <p>
-                    Jens Shumway <br>
+                    Jens Shumway 
+                    <br>
                     Front-end Developer
                 </p>
                 <img src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg "
@@ -42,8 +49,8 @@
     </div>
     <script>
         $("document").ready(function () {
-            $(".title-container").hide().fadeIn({ duration: 700 });
-            $(".banner").hide().fadeIn({duration: 1000})
+            $(".title-container").hide().fadeIn({ duration: 1500 });
+            $(".banner").hide().fadeIn({duration: 2500})
         });
 
     </script>
