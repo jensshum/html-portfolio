@@ -14,7 +14,7 @@ body
     display: block;
     background-color: none;
     overflow: hidden;
-    font-family:fantasy;  
+    font-family:Impact;  
     display: flex;
 }
 
@@ -52,10 +52,9 @@ body
   {
     width: 100%;
     text-align: center;
-    font-family:fantasy;
+    font-family:Impact;
     font-size: 8vw;
     color: white;
-    animation: zoom-in-zoom-out 1s ;
     
   }
   
@@ -66,6 +65,7 @@ body
     align-items: center;
     margin: 100px;
   }
+ 
   
   p:hover 
   {
@@ -124,7 +124,7 @@ body
   }
   
   .wrapper {
-    width:70%;
+    width:80%;
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 25px;
@@ -133,6 +133,20 @@ body
   
   .wrapper > div img {
     max-width: 100%;
+  }
+  .description
+  {
+    text-align: center;
+  }
+  .overlay
+  {
+    position: absolute;
+    left: 12vw;
+    width: 450px;
+    height: 200px;
+    top: 109vh;
+    object-fit: cover;
+    height: 300px;
   }
  
 }
@@ -156,6 +170,23 @@ body
   {
     width: 80vw;  
   }
+  .overlay
+  {
+    position: absolute;
+    width: 350px;
+    top: 100vh;
+    left: 66px;
+    height: 230px;
+    object-fit: cover;
+  }
+    .overlay2
+  {
+    position: absolute;
+    top: 161vh;
+    left: 66px;
+    height: 230px;
+    object-fit: cover;
+  }
   
 }
 
@@ -177,4 +208,21 @@ body
 {
   display: flex;
   justify-content: center;
+}
+
+.description
+{
+  padding: 50em;
+}
+
+
+.overlay2
+{
+  position: absolute;
+  width: 25vw;
+}
+.overlay3
+{
+  position: absolute;
+  width: 25vw;
 }
